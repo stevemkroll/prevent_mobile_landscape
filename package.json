@@ -1,0 +1,26 @@
+{
+  "name": "prevent_mobile_landscape",
+  "version": "1.0.0",
+  "description": "prevent mobile viewing while in landscape orienation",
+  "main": "prevent_mobile_landscape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevemkroll/prevent_mobile_landscape.git"
+  },
+  "keywords": [
+    "prevent",
+    "mobile",
+    "landscape",
+    "phone",
+    "orientation"
+  ],
+  "author": "Steve Kroll <steve.m.kroll@gmail.com> (https://github.com/stevemkroll)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevemkroll/prevent_mobile_landscape/issues"
+  },
+  "homepage": "https://github.com/stevemkroll/prevent_mobile_landscape#readme"
+}
