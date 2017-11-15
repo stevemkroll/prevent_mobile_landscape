@@ -1,7 +1,9 @@
 exports.prevent_mobile_landscape = function() {
+
+  var isMobile = false;
+  var isLandscape = false;
+
   function preventMobileLandscape() {
-    var isMobile = false;
-    var isLandscape = false;
     (function() {
       let prevent_mobile_landscape = document.createElement("div");
       prevent_mobile_landscape.setAttribute("id", "prevent_mobile_landscape");
