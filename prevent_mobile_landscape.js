@@ -13,7 +13,6 @@ exports.prevent_mobile_landscape = function() {
       prevent_mobile_landscape.style.top = '0px';
       prevent_mobile_landscape.style.left = '0px';
       prevent_mobile_landscape.style.zIndex = '999999999999';
-      prevent_mobile_landscape.style.display = 'block';
       document.body.appendChild(prevent_mobile_landscape);
     })();
 
