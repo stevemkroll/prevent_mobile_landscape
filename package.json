@@ -1,6 +1,6 @@
 {
   "name": "prevent_mobile_landscape",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "prevent mobile viewing while in landscape orienation",
   "main": "prevent_mobile_landscape.js",
   "scripts": {
