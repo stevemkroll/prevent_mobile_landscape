@@ -3,8 +3,7 @@ exports.prevent_mobile_landscape = function() {
   var isMobile = false;
   var isLandscape = false;
 
-  function preventMobileLandscape() {
-    (function() {
+(function() {
       let prevent_mobile_landscape = document.createElement("div");
       prevent_mobile_landscape.setAttribute("id", "prevent_mobile_landscape");
       prevent_mobile_landscape.style.height = '100vh';
@@ -17,6 +16,7 @@ exports.prevent_mobile_landscape = function() {
       document.body.appendChild(prevent_mobile_landscape);
     })();
 
+  function preventMobileLandscape() {
     function detectMobile() {
       if (
         navigator.userAgent.match(/iPhone/) ||
