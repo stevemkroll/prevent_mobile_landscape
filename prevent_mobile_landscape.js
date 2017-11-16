@@ -16,7 +16,7 @@ exports.prevent_mobile_landscape = function() {
     prevent_mobile_landscape.style.overflow = 'hidden';
     prevent_mobile_landscape.style.userSelect = 'none';
     prevent_mobile_landscape.style.display = 'none';
-  
+
     const prevent_mobile_landscape_text = document.createElement('p');
     prevent_mobile_landscape_text.setAttribute('id', 'prevent_mobile_landscape_text');
     prevent_mobile_landscape_text.style.position = 'fixed';
@@ -29,7 +29,7 @@ exports.prevent_mobile_landscape = function() {
     prevent_mobile_landscape_text.style.color = '#FFF';
     prevent_mobile_landscape_text.style.zIndex = '999999999';
     prevent_mobile_landscape_text.innerHTML = 'Sorry, this device orientation is not supported';
-    
+
     prevent_mobile_landscape.appendChild(prevent_mobile_landscape_text);
     document.body.appendChild(prevent_mobile_landscape);
   })();
@@ -65,10 +65,14 @@ exports.prevent_mobile_landscape = function() {
     }
   }
 
+  document.onload = preventMobileLandscape();
+
   var supportsOrientationChange = "onorientationchange" in window,
     orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
   window.addEventListener(orientationEvent, function() {
-    preventMobileLandscape();
+    setTimeout(function() {
+      preventMobileLandscape();
+    }, 100)
   }, false);
 
 };
