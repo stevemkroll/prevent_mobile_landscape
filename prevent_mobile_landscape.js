@@ -3,7 +3,7 @@ exports.prevent_mobile_landscape = function() {
   var isMobile = false;
   var isLandscape = false;
 
-  (function() {
+  function createDivs() {
     const prevent_mobile_landscape = document.createElement('div');
     prevent_mobile_landscape.setAttribute('id', 'prevent_mobile_landscape');
     prevent_mobile_landscape.style.height = '100vh';
@@ -32,7 +32,9 @@ exports.prevent_mobile_landscape = function() {
 
     prevent_mobile_landscape.appendChild(prevent_mobile_landscape_text);
     document.body.appendChild(prevent_mobile_landscape);
-  })();
+  };
+
+  createDivs();
 
   function preventMobileLandscape() {
     function detectMobile() {
