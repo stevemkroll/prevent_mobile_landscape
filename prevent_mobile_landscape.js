@@ -4,7 +4,7 @@ exports.prevent_mobile_landscape = function() {
   var isLandscape = false;
 
   function createDivs() {
-    const prevent_mobile_landscape = document.createElement('div');
+    let prevent_mobile_landscape = document.createElement('div');
     prevent_mobile_landscape.setAttribute('id', 'prevent_mobile_landscape');
     prevent_mobile_landscape.style.height = '100vh';
     prevent_mobile_landscape.style.width = '100vw';
@@ -17,7 +17,7 @@ exports.prevent_mobile_landscape = function() {
     prevent_mobile_landscape.style.userSelect = 'none';
     prevent_mobile_landscape.style.display = 'none';
 
-    const prevent_mobile_landscape_text = document.createElement('p');
+    let prevent_mobile_landscape_text = document.createElement('p');
     prevent_mobile_landscape_text.setAttribute('id', 'prevent_mobile_landscape_text');
     prevent_mobile_landscape_text.style.position = 'fixed';
     prevent_mobile_landscape_text.style.top = '0px';
@@ -32,7 +32,7 @@ exports.prevent_mobile_landscape = function() {
 
     prevent_mobile_landscape.appendChild(prevent_mobile_landscape_text);
     document.body.appendChild(prevent_mobile_landscape);
-  };
+  }
 
   createDivs();
 
@@ -74,7 +74,7 @@ exports.prevent_mobile_landscape = function() {
   window.addEventListener(orientationEvent, function() {
     setTimeout(function() {
       preventMobileLandscape();
-    }, 100)
+    }, 100);
   }, false);
 
 };
