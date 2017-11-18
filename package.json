@@ -4,7 +4,7 @@
   "description": "prevent mobile viewing while in landscape orienation",
   "main": "prevent_mobile_landscape.js",
   "scripts": {
-    "test": "./prevent_mobile_landscape.js"
+    "test": "./node_modules/jshint/bin/jshint prevent_mobile_landscape.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/stevemkroll/prevent_mobile_landscape/issues"
   },
-  "homepage": "https://github.com/stevemkroll/prevent_mobile_landscape#readme"
+  "homepage": "https://github.com/stevemkroll/prevent_mobile_landscape#readme",
+  "dependencies": {
+    "jshint": "^2.9.5"
+  }
 }
