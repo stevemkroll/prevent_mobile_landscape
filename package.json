@@ -4,7 +4,7 @@
   "description": "prevent mobile viewing while in landscape orienation",
   "main": "prevent_mobile_landscape.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "prevent_mobile_landscape.js"
   },
   "repository": {
     "type": "git",
