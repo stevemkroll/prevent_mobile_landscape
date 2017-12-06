@@ -36,4 +36,4 @@ prevent_mobile_landscape({
 });
 ```
 
-That's it... you should be good to go
+That's it... you should be good to go :shipit:
