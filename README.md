@@ -27,8 +27,8 @@ prevent_mobile_landscape({});
 edit the visuals with these parameters
 
 ```
-prevent_mobile_landscape({
-	background_color: 'linear-gradient(-90deg, #D77C7C, #AD71BC)',
+prevent_mobile_landscape({   
+  background_color: 'linear-gradient(-90deg, #D77C7C, #AD71BC)',
   text_color: '#eee',
   font: 'Montserrat-Thin',
   font_size: '20px',
@@ -36,4 +36,4 @@ prevent_mobile_landscape({
 });
 ```
 
-That's it... you should be good to go :shipit:
+That's it... you should be good to go :shipit: :thumbsup:
