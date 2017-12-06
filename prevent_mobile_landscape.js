@@ -1,4 +1,4 @@
-exports.prevent_mobile_landscape = function() {
+exports.prevent_mobile_landscape = function(object) {
 
   var isMobile = false;
   var isLandscape = false;
@@ -8,7 +8,8 @@ exports.prevent_mobile_landscape = function() {
     prevent_mobile_landscape.setAttribute('id', 'prevent_mobile_landscape');
     prevent_mobile_landscape.style.height = '100vh';
     prevent_mobile_landscape.style.width = '100vw';
-    prevent_mobile_landscape.style.background = '#666';
+    // prevent_mobile_landscape.style.background = '#666';
+    prevent_mobile_landscape.style.background = object.background_color;
     prevent_mobile_landscape.style.position = 'fixed';
     prevent_mobile_landscape.style.top = '0px';
     prevent_mobile_landscape.style.left = '0px';
@@ -28,7 +29,9 @@ exports.prevent_mobile_landscape = function() {
     prevent_mobile_landscape_text.style.textAlign = 'center';
     prevent_mobile_landscape_text.style.color = '#FFF';
     prevent_mobile_landscape_text.style.zIndex = '999999999';
-    prevent_mobile_landscape_text.innerHTML = 'Sorry, this device orientation is not supported';
+    prevent_mobile_landscape_text.style.fontFamily = object.font;
+    // prevent_mobile_landscape_text.innerHTML = 'Sorry, this device orientation is not supported';
+    prevent_mobile_landscape_text.innerHTML = object.custom_text;
 
     prevent_mobile_landscape.appendChild(prevent_mobile_landscape_text);
     document.body.appendChild(prevent_mobile_landscape);
