@@ -38,11 +38,11 @@ default values
 
 ```
 prevent_mobile_landscape({
-	background_color: 'linear-gradient(-90deg, #D77C7C, #AD71BC)',
-	text_color: '#eee',
-	font: 'Montserrat-Thin',
-	font_size: '20px',
-	text: 'Sorry, this device orientation is not supported'
+  background_color: 'linear-gradient(-90deg, #D77C7C, #AD71BC)',
+  text_color: '#eee',
+  font: 'Montserrat-Thin',
+  font_size: '20px',
+  text: 'Sorry, this device orientation is not supported'
 });
 ```
 
