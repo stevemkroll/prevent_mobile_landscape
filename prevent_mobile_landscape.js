@@ -3,15 +3,15 @@ exports.prevent_mobile_landscape = function(properties) {
   var isMobile = false;
   var isLandscape = false;
 
-  let defaults = {
+  var defaults = {
     background_color: 'linear-gradient(-90deg, #D77C7C, #AD71BC)',
     text_color: '#eee',
     font: 'Montserrat-Thin',
     font_size: '20px',
     text: 'Sorry, this device orientation is not supported'
-  }
+  };
 
-  let list = [
+  var list = [
       'background_color',
       'text_color',
       'font',
@@ -24,7 +24,7 @@ exports.prevent_mobile_landscape = function(properties) {
         switch(properties[i]){
           case undefined:
             properties[i] = defaults[i];
-        };
+        }
       });
     })();
 
