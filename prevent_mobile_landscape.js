@@ -65,8 +65,11 @@ exports.prevent_mobile_landscape = function(object) {
     detectLandscape();
     if (isMobile && isLandscape === true) {
       document.getElementById('prevent_mobile_landscape').style.display = "block";
+      document.getElementsByTagName('body')[0].style.overflow = 'hidden';
     } else {
       document.getElementById('prevent_mobile_landscape').style.display = "none";
+      document.getElementsByTagName('body')[0].style.overflow = 'auto';
+
     }
   }
 
